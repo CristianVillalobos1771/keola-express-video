@@ -1,18 +1,17 @@
-import "./index.css";
+import React from "react";
 import { Composition } from "remotion";
-import { MyComposition } from "./Composition";
+import { ExpressVideo } from "./compositions/ExpressVideo";
+import "./index.css";
 
 export const RemotionRoot: React.FC = () => {
   return (
-    <>
-      <Composition
-        id="MyComp"
-        component={MyComposition}
-        durationInFrames={60}
-        fps={30}
-        width={1280}
-        height={720}
-      />
-    </>
+    <Composition
+      id="KeOlaExpress"
+      component={ExpressVideo}
+      durationInFrames={900}
+      fps={30}
+      width={3840}
+      height={2160}
+    />
   );
 };
